@@ -41,7 +41,7 @@ sh pretrained_model/download_t7.sh
 th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 ```
 
-## Examples
+## Examples (Left: input, Right: output)
 
 <p>
     <img src='test_img/5--26.jpg' width=300 />
@@ -52,6 +52,22 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
     <img src='test_img/7--136.jpg' width=300 />
     <img src='test_output/7--136_Hayao.jpg' width=300 />
 </p>
+
+<p>
+    <img src='test_img/15--324.jpg' width=300 />
+    <img src='test_output/15--324_Hosoda.jpg' width=300 />
+</p>
+
+<p>
+    <img src='test_img/6--267.jpg' width=300 />
+    <img src='test_output/6--267_Hosoda.jpg' width=300 />
+</p>
+
+<p>
+    <img src='test_img/4--24.jpg' width=300 />
+    <img src='test_output/4--24_Hosoda.jpg' width=300 />
+</p>
+
 
 ## Acknowledgement
 
