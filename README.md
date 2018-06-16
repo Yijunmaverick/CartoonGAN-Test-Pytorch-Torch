@@ -27,7 +27,7 @@ python test.py --input_dir YourImgDir --style Hosoda --gpu 0
 
 ## Torch
 
-Working with the original models with Torch is also fine. I just convert the weights (bias) in their models from CudaTensor to FloatTensor so that `cudnn` is not required for loading models.
+Working with the original models in Torch is also fine. I just convert the weights (bias) in their models from CudaTensor to FloatTensor so that `cudnn` is not required for loading models.
 
 - Download the models:
 
