@@ -1,5 +1,5 @@
 # CartoonGAN-Test-Pytorch-Torch
-Pytorch and Torch testing code of [CartoonGAN]()http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf [Chen et al., CVPR18]. With the released pretrained models by authors, I made these simple scripts for a quick test. The training code should be similar to the popular GAN-based image-translation frameworks and is not included here.
+Pytorch and Torch testing code of [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf) `[Chen et al., CVPR18]`. With the released pretrained models by authors, I made these simple scripts for a quick test.
 
 
 ## Getting started
@@ -27,7 +27,7 @@ python test.py --input_dir YourImgDir --style Hosoda --gpu 0
 
 ## Torch
 
-Working with original models with Torch is also fine. I just convert the weights (bias) in their models from CudaTensor to FloatTensor so that `cudnn' is not required for loading models.
+Working with the original models with Torch is also fine. I just convert the weights (bias) in their models from CudaTensor to FloatTensor so that `cudnn` is not required for loading models.
 
 - Download the models:
 
@@ -68,6 +68,12 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
     <img src='test_output/4--24_Hosoda.jpg' width=300 />
 </p>
 
+
+## Note
+
+- The training code should be similar to the popular GAN-based image-translation frameworks and thus is not included here.
+
+- With a single GPU (~12GB memory), the largest image size for testing is ~500 now.
 
 ## Acknowledgement
 
