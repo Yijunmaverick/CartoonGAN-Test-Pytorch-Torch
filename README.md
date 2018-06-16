@@ -79,5 +79,5 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 
 - Many thanks to the authors for this cool work.
 
-- Part of the codes are borrowed from [DCGAN](https://github.com/soumith/dcgan.torch), [AdaIN](https://github.com/xunhuang1995/AdaIN-style) and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+- Part of the codes are borrowed from [DCGAN](https://github.com/soumith/dcgan.torch), [TextureNet](https://github.com/DmitryUlyanov/texture_nets), [AdaIN](https://github.com/xunhuang1995/AdaIN-style) and [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
