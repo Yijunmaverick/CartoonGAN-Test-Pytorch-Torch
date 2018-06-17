@@ -16,7 +16,7 @@ cd CartoonGAN-Test-Pytorch-Torch
 
 ## Pytorch
 
-The original pretrained models are Torch `nngraph` models, which cannot be loaded in Pytorch through `load_lua`. So I manully copy the weights (bias) layer by layer and convert them to `.pth` models. 
+The original pretrained models are Torch `nngraph` models, which cannot be loaded in Pytorch through `load_lua`. So I manually copy the weights (bias) layer by layer and convert them to `.pth` models. 
 
 - Download the converted models:
 
