@@ -1,5 +1,5 @@
 # CartoonGAN-Test-Pytorch-Torch
-Pytorch and Torch testing code of [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf) `[Chen et al., CVPR18]`. With the released pretrained models by the authors, I made these simple scripts for a quick test.
+Pytorch and Torch testing code of [CartoonGAN](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf) `[Chen et al., CVPR18]`. With the released pretrained [models](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) by the authors, I made these simple scripts for a quick test.
 
 
 ## Getting started
@@ -29,7 +29,7 @@ python test.py --input_dir YourImgDir --style Hosoda --gpu 0
 
 Working with the original models in Torch is also fine. I just convert the weights (bias) in their models from CudaTensor to FloatTensor so that `cudnn` is not required for loading models.
 
-- Download the models:
+- Download the converted models:
 
 ```
 sh pretrained_model/download_t7.sh
