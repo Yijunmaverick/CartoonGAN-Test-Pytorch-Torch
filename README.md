@@ -50,17 +50,17 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 
 <p>
     <img src='test_img/in1.png' width=300 />
-    <img src='test_output/in1_Hayao.jpng' width=300 />
+    <img src='test_output/in1_Hayao.png' width=300 />
 </p>
 
 <p>
     <img src='test_img/in2.png' width=300 />
-    <img src='test_output/in2_Hayao.jpng' width=300 />
+    <img src='test_output/in2_Hayao.png' width=300 />
 </p>
 
 <p>
     <img src='test_img/in3.png' width=300 />
-    <img src='test_output/in3_Hayao.jpng' width=300 />
+    <img src='test_output/in3_Hayao.png' width=300 />
 </p>
 
 <p>
