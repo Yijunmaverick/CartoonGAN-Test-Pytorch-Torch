@@ -49,6 +49,16 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 ## Examples (Left: input, Right: output)
 
 <p>
+    <img src='test_img/in2.png' width=300 />
+    <img src='test_output/in2_Hayao.png' width=300 />
+</p>
+
+<p>
+    <img src='test_img/in3.png' width=300 />
+    <img src='test_output/in3_Hayao.png' width=300 />
+</p>
+
+<p>
     <img src='test_img/5--26.jpg' width=300 />
     <img src='test_output/5--26_Hosoda.jpg' width=300 />
 </p>
@@ -61,16 +71,6 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 <p>
     <img src='test_img/15--324.jpg' width=300 />
     <img src='test_output/15--324_Hosoda.jpg' width=300 />
-</p>
-
-<p>
-    <img src='test_img/6--267.jpg' width=300 />
-    <img src='test_output/6--267_Hosoda.jpg' width=300 />
-</p>
-
-<p>
-    <img src='test_img/4--24.jpg' width=300 />
-    <img src='test_output/4--24_Hosoda.jpg' width=300 />
 </p>
 
 
