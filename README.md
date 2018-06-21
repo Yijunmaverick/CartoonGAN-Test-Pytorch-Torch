@@ -49,11 +49,6 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 ## Examples (Left: input, Right: output)
 
 <p>
-    <img src='test_img/in1.png' width=300 />
-    <img src='test_output/in1_Hayao.png' width=300 />
-</p>
-
-<p>
     <img src='test_img/in2.png' width=300 />
     <img src='test_output/in2_Hayao.png' width=300 />
 </p>
