@@ -26,7 +26,7 @@ if not os.path.exists(opt.output_dir): os.mkdir(opt.output_dir)
 model = Transformer()
 model.load_state_dict(torch.load(os.path.join(opt.model_path, opt.style + '_net_G_float.pth')))
 model.eval()
-print(opt.gpu)
+
 if opt.gpu > -1:
 	print('GPU mode')
 	model.cuda()
