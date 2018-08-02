@@ -6,7 +6,7 @@ Pytorch and Torch testing code of [CartoonGAN](http://openaccess.thecvf.com/cont
 
 - Linux
 - NVIDIA GPU
-- Pytorch 
+- Pytorch 0.3
 - Torch
 
 ```
@@ -77,8 +77,6 @@ th test.lua -input_dir YourImgDir -style Hosoda -gpu 0
 ## Note
 
 - The training code should be similar to the popular GAN-based image-translation frameworks and thus is not included here.
-
-- With a single GPU (~12GB memory), the largest image size for testing is ~500 now.
 
 ## Acknowledgement
 
