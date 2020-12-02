@@ -58,17 +58,26 @@ for files in os.listdir(opt.input_dir):
 	# preprocess, (-1, 1)
 	input_image = -1 + 2 * input_image 
 	if opt.gpu > -1:
-		input_image = Variable(input_image, volatile=True).cuda()
-	else:
-		input_image = Variable(input_image, volatile=True).float()
-	# forward
-	output_image = model(input_image)
-	output_image = output_image[0]
-	# BGR -> RGB
-	output_image = output_image[[2, 1, 0], :, :]
-	# deprocess, (0, 1)
-	output_image = output_image.data.cpu().float() * 0.5 + 0.5
-	# save
-	vutils.save_image(output_image, os.path.join(opt.output_dir, files[:-4] + '_' + opt.style + '.jpg'))
+        with torch.no_grad():
+            input_image = Variable(input_image).cuda()
+            # forward
+            output_image = model(input_image)
+            output_image = output_image[0]
+            # BGR -> RGB
+            output_image = output_image[[2, 1, 0], :, :]
+    else:
+        with torch.no_grad():
+            input_image = Variable(input_image).float()
+            output_image = model(input_image)
+    
+    
+    # deprocess, (0, 1)
+    output_image = output_image.data.cpu().float() * 0.5 + 0.5
+    # save
+    print ('Saving...%s' % (files[:-4] + '_' + opt.style + '.jpg'))
+    vutils.save_image(output_image, os.path.join(opt.output_dir, files[:-4] + '_' + opt.style + '.jpg'))
+    
+    
+    torch.cuda.empty_cache() 
 
 print('Done!')
